@@ -1,0 +1,4 @@
+section#productionRows {
+  display: flex;
+  flex-direction: column;
+}
