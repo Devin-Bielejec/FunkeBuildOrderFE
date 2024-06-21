@@ -2,6 +2,7 @@ import React from "react";
 import "./Selection.css";
 import Icon from "../icons/head.png";
 import Tree from "../icons/tree.jpg";
+import Peasant from "../images/Peasant.png";
 
 export default function Selection() {
   let itemsToSelect = Array.from({ length: 12 }, (_, index) => index + 1);
@@ -11,7 +12,7 @@ export default function Selection() {
         <div
           className="itemToSelect"
           style={{
-            backgroundImage: `url(${Icon})`,
+            backgroundImage: `url(${Peasant})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             position: "relative",

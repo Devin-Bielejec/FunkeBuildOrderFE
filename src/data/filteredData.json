@@ -1,0 +1,2594 @@
+{
+  "human": {
+    "Town Hall": {
+      "name": "Town Hall",
+      "unlocks": ["Blacksmith"],
+      "requires": "",
+      "gold": "385",
+      "lumber": "205",
+      "build_time": "180",
+      "food_produced": "12",
+      "units": [
+        {
+          "name": "Peasant",
+          "requires": "",
+          "gold": "75",
+          "lumber": "0",
+          "build_time": "15",
+          "food": "1",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Backpack",
+          "gold": "50",
+          "lumber": "25"
+        }
+      ],
+      "items": [],
+      "upgrades_to": {
+        "name": "Keep",
+        "unlocks": ["Arcane Sanctum", "Workshop", "Gryphon Aviary"],
+        "gold": 320,
+        "lumber": 210,
+        "build_time": "140",
+        "food_produced": "14",
+        "units": [
+          {
+            "name": "Peasant",
+            "requires": "",
+            "gold": "75",
+            "lumber": "0",
+            "build_time": "15",
+            "food": "1",
+            "morphs": ""
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Backpack",
+            "gold": "50",
+            "lumber": "25"
+          }
+        ],
+        "items": [],
+        "upgrades_to": {
+          "name": "Castle",
+          "unlocks": ["Knight", "Siege Engine", "Gryphon Rider"],
+          "requires": ["Altar of Kings"],
+          "gold": 320,
+          "lumber": 210,
+          "build_time": "140",
+          "food_produced": "16",
+          "units": [
+            {
+              "name": "Peasant",
+              "requires": "",
+              "gold": "75",
+              "lumber": "0",
+              "build_time": "15",
+              "food": "1",
+              "morphs": ""
+            }
+          ],
+          "upgrades": [
+            {
+              "name": "Backpack",
+              "gold": "50",
+              "lumber": "25"
+            }
+          ],
+          "items": [],
+          "upgrades_to": null
+        }
+      }
+    },
+    "Barracks (Human)": {
+      "name": "Barracks",
+      "unlocks": "",
+      "requires": "",
+      "gold": "160",
+      "lumber": "60",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Footman",
+          "requires": "",
+          "gold": "135",
+          "lumber": "0",
+          "build_time": "20",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Rifleman",
+          "requires": ["Blacksmith"],
+          "gold": "205",
+          "lumber": "30",
+          "build_time": "26",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Knight",
+          "requires": ["Castle", "Blacksmith", "Lumber Mill"],
+          "gold": "245",
+          "lumber": "60",
+          "build_time": "40",
+          "food": "4",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Defend",
+          "gold": "150",
+          "lumber": "100",
+          "research_time": "45"
+        },
+        {
+          "name": "Long Rifles",
+          "gold": "75",
+          "lumber": "125",
+          "research_time": "30"
+        },
+        {
+          "name": "Animal War Training",
+          "gold": "125",
+          "lumber": "125",
+          "research_time": "40"
+        }
+      ],
+      "items": []
+    },
+    "Arcane Sanctum": {
+      "name": "Arcane Sanctum",
+      "unlocks": "",
+      "requires": ["Keep"],
+      "gold": "150",
+      "lumber": "140",
+      "build_time": "70",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Priest",
+          "requires": "",
+          "gold": "135",
+          "lumber": "10",
+          "build_time": "28",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Sorceress",
+          "requires": "",
+          "gold": "155",
+          "lumber": "20",
+          "build_time": "30",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Spell Breaker",
+          "requires": ["Keep", "Arcane Vault"],
+          "gold": "215",
+          "lumber": "30",
+          "build_time": "28",
+          "food": "3",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        [
+          {
+            "name": "Priest Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Priest Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Castle",
+            "research_time": 75
+          }
+        ],
+        [
+          {
+            "name": "Sorceress Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Sorceress Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Castle",
+            "research_time": 75
+          }
+        ],
+        {
+          "name": "Magic Sentry",
+          "gold": "50",
+          "lumber": "50",
+          "research_time": "30"
+        },
+        {
+          "name": "Control Magic",
+          "gold": "75",
+          "lumber": "75",
+          "research_time": "45"
+        }
+      ],
+      "items": [],
+      "upgrades_to": []
+    },
+    "Workshop": {
+      "name": "Workshop",
+      "unlocks": ["Cannon Tower"],
+      "requires": ["Keep", "Blacksmith"],
+      "gold": "140",
+      "lumber": "140",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Flying Machine",
+          "requires": "",
+          "gold": "100",
+          "lumber": "30",
+          "build_time": "13",
+          "food": "1",
+          "morphs": ""
+        },
+        {
+          "name": "Mortar Team",
+          "requires": "",
+          "gold": "180",
+          "lumber": "70",
+          "build_time": "32",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Siege Engine",
+          "requires": ["Castle"],
+          "gold": "195",
+          "lumber": "60",
+          "build_time": "55",
+          "food": "4",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Flak Cannons",
+          "gold": "100",
+          "lumber": "150",
+          "research_time": "40"
+        },
+        {
+          "name": "Flying Machine Bombs",
+          "gold": "150",
+          "lumber": "100",
+          "research_time": "35"
+        },
+        {
+          "name": "Flare",
+          "gold": "50",
+          "lumber": "50",
+          "research_time": "20"
+        },
+        {
+          "name": "Fragmentation Shards",
+          "gold": "50",
+          "lumber": "100",
+          "research_time": "40"
+        },
+        {
+          "name": "Barrage",
+          "gold": "50",
+          "lumber": "150",
+          "research_time": "40"
+        }
+      ],
+      "items": []
+    },
+    "Gryphon Aviary": {
+      "name": "Gryphon Aviary",
+      "unlocks": "",
+      "requires": ["Keep", "Lumber Mill"],
+      "gold": "140",
+      "lumber": "150",
+      "build_time": "75",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Dragonhawk Rider",
+          "requires": "",
+          "gold": "200",
+          "lumber": "30",
+          "build_time": "28",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Gryphon Rider",
+          "requires": ["Castle"],
+          "gold": "280",
+          "lumber": "70",
+          "build_time": "45",
+          "food": "4",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Cloud",
+          "gold": "50",
+          "lumber": "100",
+          "research_time": "35"
+        },
+        {
+          "name": "Storm Hammers",
+          "gold": "125",
+          "lumber": "225",
+          "research_time": "45"
+        }
+      ],
+      "items": []
+    },
+    "Farm": {
+      "name": "Farm",
+      "requires": "",
+      "gold": "80",
+      "lumber": "20",
+      "build_time": "35",
+      "food_produced": "6",
+      "upgrades": [],
+      "items": []
+    },
+    "Altar of Kings": {
+      "name": "Altar of Kings",
+      "unlocks": ["Castle"],
+      "requires": "",
+      "gold": "180",
+      "lumber": "50",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "food": "5",
+          "name": "Archmage",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Keep", "Castle"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Mountain King",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Keep", "Castle"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Paladin",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Keep", "Castle"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Blood Mage",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Keep", "Castle"],
+          "build_time": "55"
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Arcane Vault": {
+      "name": "Arcane Vault",
+      "unlocks": ["Spell Breaker"],
+      "requires": "",
+      "gold": "130",
+      "lumber": "30",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": [
+        {
+          "name": "Ivory Tower",
+          "gold": "40",
+          "stock": "2",
+          "stock_replenish": "30",
+          "stock_start": "0",
+          "requires": ["Keep"],
+          "lumber": "25"
+        },
+        {
+          "name": "Lesser Clarity Potion",
+          "gold": "70",
+          "stock": "2",
+          "stock_replenish": "30",
+          "stock_start": "0"
+        },
+        {
+          "name": "Mechanical Critter",
+          "gold": "50",
+          "stock": "2",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "The Issues With Orb of Fire",
+          "gold": "250",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Castle"]
+        },
+        {
+          "name": "Potion of Healing",
+          "gold": "150",
+          "stock": "3",
+          "stock_replenish": "120",
+          "requires": ["Keep"]
+        },
+        {
+          "name": "Potion of Mana",
+          "gold": "150",
+          "stock": "2",
+          "stock_replenish": "120",
+          "requires": ["Keep"]
+        },
+        {
+          "name": "Scroll of Regeneration",
+          "gold": "100",
+          "stock": "2",
+          "stock_replenish": "90",
+          "stock_start": "0"
+        },
+        {
+          "name": "Scroll of Town Portal",
+          "gold": "325",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": ["Keep"]
+        },
+        {
+          "name": "Staff of Sanctuary",
+          "gold": "200",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Castle"]
+        }
+      ]
+    },
+    "Lumber Mill": {
+      "name": "Lumber Mill",
+      "unlocks": ["Guard Tower", "Gryphon Aviary"],
+      "requires": "",
+      "gold": "120",
+      "lumber": "0",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [
+        [
+          {
+            "name": "Improved Lumber Harvesting",
+            "gold": 100,
+            "lumber": 0,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Advanced Lumber Harvesting",
+            "gold": 200,
+            "lumber": 0,
+            "required": "Keep",
+            "research_time": 75
+          }
+        ],
+        [
+          {
+            "name": "Improved Masonry",
+            "gold": 125,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Advanced Masonry",
+            "gold": 150,
+            "lumber": 75,
+            "required": "Keep",
+            "research_time": 75
+          },
+          {
+            "name": "Imbued Masonry",
+            "gold": 175,
+            "lumber": 100,
+            "required": "Castle",
+            "research_time": 90
+          }
+        ]
+      ],
+      "items": []
+    },
+    "Blacksmith": {
+      "name": "Blacksmith",
+      "unlocks": ["Workshop", "Cannon Tower"],
+      "requires": ["Town Hall"],
+      "gold": "140",
+      "lumber": "40",
+      "build_time": "70",
+      "food_produced": "0",
+      "upgrades": [
+        [
+          {
+            "name": "Iron Forged Swords",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Steel Forged Swords",
+            "gold": 175,
+            "lumber": 175,
+            "required": "Keep",
+            "research_time": 75
+          },
+          {
+            "name": "Mithril Forged Swords",
+            "gold": 250,
+            "lumber": 300,
+            "required": "Castle",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Iron Plating",
+            "gold": 125,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Steel Plating",
+            "gold": 150,
+            "lumber": 175,
+            "required": "Keep",
+            "research_time": 75
+          },
+          {
+            "name": "Mithril Plating",
+            "gold": 175,
+            "lumber": 275,
+            "required": "Castle",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Black Gunpowder",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Refined Gunpowder",
+            "gold": 175,
+            "lumber": 175,
+            "required": "Keep",
+            "research_time": 75
+          },
+          {
+            "name": "Imbued Gunpowder",
+            "gold": 250,
+            "lumber": 300,
+            "required": "Castle",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Studded Leather Armor",
+            "gold": 100,
+            "lumber": 100,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Reinforced Leather Armor",
+            "gold": 150,
+            "lumber": 175,
+            "required": "Keep",
+            "research_time": 75
+          },
+          {
+            "name": "Dragonhide Armor",
+            "gold": 200,
+            "lumber": 250,
+            "required": "Castle",
+            "research_time": 90
+          }
+        ]
+      ],
+      "items": []
+    },
+    "Scout Tower": {
+      "name": "Scout Tower",
+      "requires": "",
+      "gold": "30",
+      "lumber": "20",
+      "build_time": "25",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": [],
+      "upgrades_to": [
+        {
+          "name": "Arcane Tower",
+          "requires": "",
+          "gold": "100",
+          "lumber": "70",
+          "build_time": "50"
+        },
+        {
+          "name": "Guard Tower",
+          "requires": ["Lumber Mill"],
+          "gold": "100",
+          "lumber": "70",
+          "build_time": "50"
+        },
+        {
+          "name": "Cannon Tower",
+          "requires": ["Workshop"],
+          "gold": "150",
+          "lumber": "120",
+          "build_time": "65"
+        }
+      ]
+    }
+  },
+  "orc": {
+    "Great Hall": {
+      "name": "Great Hall",
+      "unlocks": "",
+      "requires": "",
+      "gold": "385",
+      "lumber": "185",
+      "build_time": "140",
+      "food_produced": "11",
+      "units": [
+        {
+          "name": "Peon",
+          "requires": "",
+          "gold": "75",
+          "lumber": "0",
+          "build_time": "15",
+          "food": "1",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Backpack",
+          "gold": "50",
+          "lumber": "25"
+        },
+        {
+          "name": "Pillage",
+          "gold": "75",
+          "lumber": "25",
+          "research_time": "45"
+        }
+      ],
+      "items": [],
+      "upgrades_to": {
+        "name": "Stronghold",
+        "unlocks": ["Demolisher", "Beastiary", "Spirit Lodge", "Tauren Totem"],
+        "requires": "",
+        "gold": 315,
+        "lumber": 190,
+        "build_time": "140",
+        "food_produced": "11",
+        "units": [
+          {
+            "name": "Peon",
+            "requires": "",
+            "gold": "75",
+            "lumber": "0",
+            "build_time": "15",
+            "food": "1",
+            "morphs": ""
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Backpack",
+            "gold": "50",
+            "lumber": "25"
+          },
+          {
+            "name": "Pillage",
+            "gold": "75",
+            "lumber": "25",
+            "research_time": "45"
+          }
+        ],
+        "items": [],
+        "upgrades_to": {
+          "name": "Fortress",
+          "unlocks": ["Tauren Totem"],
+          "requires": ["Altar of Storms"],
+          "gold": 325,
+          "lumber": 190,
+          "build_time": "140",
+          "food_produced": "11",
+          "units": [
+            {
+              "name": "Peon",
+              "requires": "",
+              "gold": "75",
+              "lumber": "0",
+              "build_time": "15",
+              "food": "1",
+              "morphs": ""
+            }
+          ],
+          "upgrades": [
+            {
+              "name": "Backpack",
+              "gold": "50",
+              "lumber": "25"
+            },
+            {
+              "name": "Pillage",
+              "gold": "75",
+              "lumber": "25",
+              "research_time": "45"
+            }
+          ],
+          "items": [],
+          "upgrades_to": null
+        }
+      }
+    },
+    "Orc Burrow": {
+      "name": "Orc Burrow",
+      "requires": "",
+      "gold": "160",
+      "lumber": "40",
+      "build_time": "50",
+      "food_produced": "10",
+      "upgrades": [],
+      "items": []
+    },
+    "Altar of Storms": {
+      "name": "Altar of Storms",
+      "unlocks": ["Fortress"],
+      "requires": "",
+      "gold": "180",
+      "lumber": "50",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "food": "5",
+          "name": "Blademaster",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Stronghold", "Fortress"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Far Seer",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Stronghold", "Fortress"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Tauren Chieftain",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Stronghold", "Fortress"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Shadow Hunter",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Stronghold", "Fortress"],
+          "build_time": "55"
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Voodoo Lounge": {
+      "name": "Voodoo Lounge",
+      "unlocks": ["Troll Batrider"],
+      "requires": "",
+      "gold": "130",
+      "lumber": "30",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": [
+        {
+          "name": "Healing Salve",
+          "gold": "100",
+          "stock": "2",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "Lesser Clarity Potion",
+          "gold": "70",
+          "stock": "2",
+          "stock_replenish": "30",
+          "stock_start": "0"
+        },
+        {
+          "name": "Orb of Lightning",
+          "gold": "375",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Fortress"]
+        },
+        {
+          "name": "Potion of Healing",
+          "gold": "150",
+          "stock": "3",
+          "stock_replenish": "120",
+          "requires": ["Stronghold"]
+        },
+        {
+          "name": "Potion of Mana",
+          "gold": "150",
+          "stock": "2",
+          "stock_replenish": "120",
+          "requires": ["Stronghold"]
+        },
+        {
+          "name": "Scroll of Speed",
+          "gold": "70",
+          "stock": "1",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "Scroll of Town Portal",
+          "gold": "325",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": ["Stronghold"]
+        },
+        {
+          "name": "Tiny Great Hall",
+          "gold": "600",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Fortress"],
+          "lumber": "185"
+        }
+      ]
+    },
+    "War Mill": {
+      "name": "War Mill",
+      "unlocks": ["Watch Tower", "Tauren", "Kodo Beast"],
+      "requires": "",
+      "gold": "205",
+      "lumber": "0",
+      "build_time": "70",
+      "food_produced": "0",
+      "upgrades": [
+        [
+          {
+            "name": "Steel Melee Weapons",
+            "gold": 100,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Thorium Melee Weapons",
+            "gold": 150,
+            "lumber": 150,
+            "required": "Stronghold",
+            "research_time": 75
+          },
+          {
+            "name": "Arcanite Melee Weapons",
+            "gold": 200,
+            "lumber": 225,
+            "required": "Fortress",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Steel Armor",
+            "gold": 150,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Thorium Armor",
+            "gold": 225,
+            "lumber": 200,
+            "required": "Stronghold",
+            "research_time": 75
+          },
+          {
+            "name": "Arcanite Armor",
+            "gold": 300,
+            "lumber": 325,
+            "required": "Fortress",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Steel Ranged Weapons",
+            "gold": 100,
+            "lumber": 100,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Thorium Ranged Weapons",
+            "gold": 150,
+            "lumber": 175,
+            "required": "Stronghold",
+            "research_time": 75
+          },
+          {
+            "name": "Arcanite Ranged Weapons",
+            "gold": 200,
+            "lumber": 250,
+            "required": "Fortress",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Spiked Barricades",
+            "gold": 25,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Spiked Barricades",
+            "gold": 50,
+            "lumber": 100,
+            "required": "Stronghold",
+            "research_time": 75
+          }
+        ],
+        []
+      ],
+      "items": []
+    },
+    "Watch Tower": {
+      "name": "Watch Tower",
+      "requires": ["War Mill"],
+      "gold": "110",
+      "lumber": "80",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Barracks (Orc)": {
+      "name": "Barracks",
+      "unlocks": "",
+      "requires": "",
+      "gold": "180",
+      "lumber": "50",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Grunt",
+          "requires": "",
+          "gold": "200",
+          "lumber": "0",
+          "build_time": "30",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Troll Headhunter",
+          "requires": ["War Mill"],
+          "gold": "140",
+          "lumber": "20",
+          "build_time": "22",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Demolisher",
+          "requires": ["War Mill", "Stronghold"],
+          "gold": "220",
+          "lumber": "50",
+          "build_time": "40",
+          "food": "4",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Brute Strength",
+          "gold": "50",
+          "lumber": "150",
+          "research_time": "40"
+        },
+        {
+          "name": "Troll Regeneration",
+          "gold": "100",
+          "lumber": "100",
+          "research_time": "35"
+        },
+        [],
+        {
+          "name": "Burning Oil",
+          "gold": "50",
+          "lumber": "150",
+          "research_time": "30"
+        }
+      ],
+      "items": []
+    },
+    "Spirit Lodge": {
+      "name": "Spirit Lodge",
+      "unlocks": "",
+      "requires": ["Stronghold"],
+      "gold": "150",
+      "lumber": "135",
+      "build_time": "70",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Shaman",
+          "requires": "",
+          "gold": "130",
+          "lumber": "20",
+          "build_time": "30",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Troll Witch Doctor",
+          "requires": "",
+          "gold": "145",
+          "lumber": "25",
+          "build_time": "30",
+          "food": "2",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        [
+          {
+            "name": "Shaman Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Shaman Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Fortress",
+            "research_time": 75
+          }
+        ],
+        [
+          {
+            "name": "Witch Doctor Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Witch Doctor Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Fortress",
+            "research_time": 75
+          }
+        ]
+      ],
+      "items": []
+    },
+    "Beastiary": {
+      "name": "Beastiary",
+      "unlocks": "",
+      "requires": ["Stronghold"],
+      "gold": "145",
+      "lumber": "140",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Raider",
+          "requires": "",
+          "gold": "180",
+          "lumber": "40",
+          "build_time": "28",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Wind Rider",
+          "requires": "",
+          "gold": "265",
+          "lumber": "40",
+          "build_time": "35",
+          "food": "4",
+          "morphs": ""
+        },
+        {
+          "name": "Kodo Beast",
+          "requires": ["War Mill"],
+          "gold": "255",
+          "lumber": "60",
+          "build_time": "30",
+          "food": "4",
+          "morphs": ""
+        },
+        {
+          "name": "Troll Batrider",
+          "requires": ["Voodoo Lounge"],
+          "gold": "160",
+          "lumber": "40",
+          "build_time": "28",
+          "food": "2",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Ensnare",
+          "gold": "50",
+          "lumber": "75",
+          "research_time": "40"
+        },
+        [
+          {
+            "name": "War Drums Damage Increase",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Fortress",
+            "research_time": 40
+          }
+        ],
+        {
+          "name": "Envenomed Spears",
+          "gold": "100",
+          "lumber": "150",
+          "research_time": "40"
+        },
+        {
+          "name": "Liquid Fire",
+          "gold": "75",
+          "lumber": "125",
+          "research_time": "75"
+        }
+      ],
+      "items": []
+    },
+    "Tauren Totem": {
+      "name": "Tauren Totem",
+      "unlocks": "",
+      "requires": ["Stronghold"],
+      "gold": "135",
+      "lumber": "155",
+      "build_time": "70",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Spirit Walker",
+          "requires": "",
+          "gold": "195",
+          "lumber": "35",
+          "build_time": "35",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Tauren",
+          "requires": ["Fortress", "War Mill"],
+          "gold": "280",
+          "lumber": "80",
+          "build_time": "39",
+          "food": "5",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        [
+          {
+            "name": "Spirit Walker Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 50
+          },
+          {
+            "name": "Spirit Walker Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Fortress",
+            "research_time": 65
+          }
+        ],
+        {
+          "name": "Pulverize Damage Increase",
+          "gold": "100",
+          "lumber": "175",
+          "research_time": "40"
+        }
+      ],
+      "items": []
+    }
+  },
+  "nightelf": {
+    "Tree of Life": {
+      "name": "Tree of Life",
+      "unlocks": ["Hunter's Hall"],
+      "requires": "",
+      "gold": "340",
+      "lumber": "185",
+      "build_time": "120",
+      "food_produced": "10",
+      "units": [
+        {
+          "name": "Wisp",
+          "requires": "",
+          "gold": "60",
+          "lumber": "0",
+          "build_time": "14",
+          "food": "1",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        [],
+        {
+          "name": "Backpack",
+          "gold": "50",
+          "lumber": "25"
+        }
+      ],
+      "items": [],
+      "upgrades_to": {
+        "name": "Tree of Ages",
+        "unlocks": ["Ancient of Wind", "Ancient of Lore"],
+        "requires": "",
+        "gold": 320,
+        "lumber": 180,
+        "build_time": "140",
+        "food_produced": "10",
+        "units": [
+          {
+            "name": "Wisp",
+            "requires": "",
+            "gold": "60",
+            "lumber": "0",
+            "build_time": "14",
+            "food": "1",
+            "morphs": ""
+          }
+        ],
+        "upgrades": [
+          [],
+          {
+            "name": "Backpack",
+            "gold": "50",
+            "lumber": "25"
+          }
+        ],
+        "items": [],
+        "upgrades_to": {
+          "name": "Tree of Eternity",
+          "unlocks": ["Chimaera Roost"],
+          "requires": ["Altar of Elders"],
+          "gold": 330,
+          "lumber": 200,
+          "build_time": "140",
+          "food_produced": "10",
+          "units": [
+            {
+              "name": "Wisp",
+              "requires": "",
+              "gold": "60",
+              "lumber": "0",
+              "build_time": "14",
+              "food": "1",
+              "morphs": ""
+            }
+          ],
+          "upgrades": [
+            [],
+            {
+              "name": "Backpack",
+              "gold": "50",
+              "lumber": "25"
+            }
+          ],
+          "items": [],
+          "upgrades_to": null
+        }
+      }
+    },
+    "Moon Well": {
+      "name": "Moon Well",
+      "requires": "",
+      "gold": "180",
+      "lumber": "40",
+      "build_time": "50",
+      "food_produced": "10",
+      "upgrades": [],
+      "items": []
+    },
+    "Altar of Elders": {
+      "name": "Altar of Elders",
+      "unlocks": ["Tree of Eternity"],
+      "requires": "",
+      "gold": "180",
+      "lumber": "50",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "food": "5",
+          "name": "Demon Hunter",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Tree of Ages", "Tree of Eternity"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Keeper of the Grove",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Tree of Ages", "Tree of Eternity"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Priestess of the Moon",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Tree of Ages", "Tree of Eternity"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Warden",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Tree of Ages", "Tree of Eternity"],
+          "build_time": "55"
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Ancient of Wonders": {
+      "name": "Ancient of Wonders",
+      "unlocks": [
+        "Backpack",
+        "Mountain Giant",
+        "Hardened Skin",
+        "Resistant Skin",
+        "Faerie Dragon"
+      ],
+      "requires": "",
+      "gold": "90",
+      "lumber": "30",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": [
+        {
+          "name": "Anti-magic Potion",
+          "gold": "100",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Tree of Eternity"]
+        },
+        {
+          "name": "Dust of Appearance",
+          "gold": "75",
+          "stock": "1",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "Lesser Clarity Potion",
+          "gold": "70",
+          "stock": "2",
+          "stock_replenish": "30",
+          "stock_start": "0"
+        },
+        {
+          "name": "Moonstone",
+          "gold": "50",
+          "stock": "1",
+          "stock_replenish": "90",
+          "stock_start": "0"
+        },
+        {
+          "name": "Orb of Venom",
+          "gold": "325",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Tree of Eternity"]
+        },
+        {
+          "name": "Potion of Healing",
+          "gold": "150",
+          "stock": "3",
+          "stock_replenish": "120",
+          "requires": ["Tree of Ages"]
+        },
+        {
+          "name": "Potion of Mana",
+          "gold": "150",
+          "stock": "2",
+          "stock_replenish": "120",
+          "requires": ["Tree of Ages"]
+        },
+        {
+          "name": "Scroll of Town Portal",
+          "gold": "325",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": ["Tree of Ages"]
+        },
+        {
+          "name": "Staff of Preservation",
+          "gold": "150",
+          "stock": "1",
+          "stock_replenish": "120",
+          "requires": ["Tree of Ages"]
+        }
+      ]
+    },
+    "Hunter's Hall": {
+      "name": "Hunter's Hall",
+      "unlocks": ["Ancient of Lore"],
+      "requires": ["Tree of Life"],
+      "gold": "210",
+      "lumber": "100",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [
+        [
+          {
+            "name": "Strength of the Moon",
+            "gold": 125,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Strength of the Moon",
+            "gold": 175,
+            "lumber": 175,
+            "required": "Tree of Ages",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Strength of the Moon",
+            "gold": 225,
+            "lumber": 275,
+            "required": "Tree of Eternity",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Moon Armor",
+            "gold": 150,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Moon Armor",
+            "gold": 200,
+            "lumber": 150,
+            "required": "Tree of Ages",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Moon Armor",
+            "gold": 250,
+            "lumber": 225,
+            "required": "Tree of Eternity",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Strength of the Wild",
+            "gold": 100,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Strength of the Wild",
+            "gold": 175,
+            "lumber": 175,
+            "required": "Tree of Ages",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Strength of the Wild",
+            "gold": 250,
+            "lumber": 275,
+            "required": "Tree of Eternity",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Reinforced Hides",
+            "gold": 150,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Reinforced Hides",
+            "gold": 200,
+            "lumber": 150,
+            "required": "Tree of Ages",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Reinforced Hides",
+            "gold": 250,
+            "lumber": 250,
+            "required": "Tree of Eternity",
+            "research_time": 90
+          }
+        ]
+      ],
+      "items": []
+    },
+    "Ancient Protector": {
+      "name": "Ancient Protector",
+      "requires": ["Hunter's Hall"],
+      "gold": "135",
+      "lumber": "80",
+      "build_time": "55",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Ancient of War": {
+      "name": "Ancient of War",
+      "requires": "",
+      "gold": "150",
+      "lumber": "60",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Archer",
+          "requires": "",
+          "gold": "130",
+          "lumber": "10",
+          "build_time": "20",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Huntress",
+          "requires": ["Hunter's Hall"],
+          "gold": "195",
+          "lumber": "20",
+          "build_time": "30",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Glaive Thrower",
+          "requires": ["Hunter's Hall"],
+          "gold": "210",
+          "lumber": "65",
+          "build_time": "48",
+          "food": "3",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Ancient of Wind": {
+      "name": "Ancient of Wind",
+      "requires": ["Tree of Ages"],
+      "gold": "150",
+      "lumber": "140",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Hippogryph",
+          "requires": "",
+          "gold": "160",
+          "lumber": "20",
+          "build_time": "30",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Druid of the Talon",
+          "requires": "",
+          "gold": "135",
+          "lumber": "20",
+          "build_time": "22",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Faerie Dragon",
+          "requires": ["Ancient of Wonders"],
+          "gold": "155",
+          "lumber": "25",
+          "build_time": "25",
+          "food": "2",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        [
+          {
+            "name": "Druid of the Talon Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Druid of the Talon Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Tree of Eternity",
+            "research_time": 75
+          }
+        ],
+        []
+      ],
+      "items": []
+    },
+    "Ancient of Lore": {
+      "name": "Ancient of Lore",
+      "requires": ["Tree of Ages", "Hunter's Hall"],
+      "gold": "155",
+      "lumber": "145",
+      "build_time": "70",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Dryad",
+          "requires": "",
+          "gold": "145",
+          "lumber": "60",
+          "build_time": "30",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Druid of the Claw",
+          "requires": ["Tree of Ages"],
+          "gold": "255",
+          "lumber": "80",
+          "build_time": "35",
+          "food": "4",
+          "morphs": ""
+        },
+        {
+          "name": "Mountain Giant",
+          "requires": ["Tree of Ages", "Ancient of Wonders"],
+          "gold": "350",
+          "lumber": "100",
+          "build_time": "50",
+          "food": "7",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Chimaera Roost": {
+      "name": "Chimaera Roost",
+      "requires": ["Tree of Eternity"],
+      "gold": "140",
+      "lumber": "190",
+      "build_time": "80",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Chimaera",
+          "requires": "",
+          "gold": "330",
+          "lumber": "70",
+          "build_time": "60",
+          "food": "5",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Corrosive Breath",
+          "gold": "125",
+          "lumber": "225",
+          "research_time": "40"
+        }
+      ],
+      "items": []
+    }
+  },
+  "undead": {
+    "Necropolis": {
+      "name": "Necropolis",
+      "unlocks": "",
+      "requires": "",
+      "gold": "225",
+      "lumber": "0",
+      "build_time": "90",
+      "food_produced": "10",
+      "units": [
+        {
+          "name": "Acolyte",
+          "requires": "",
+          "gold": "75",
+          "lumber": "0",
+          "build_time": "15",
+          "food": "1",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Backpack",
+          "gold": "50",
+          "lumber": "25"
+        }
+      ],
+      "items": [],
+      "upgrades_to": {
+        "name": "Halls of the Dead",
+        "unlocks": [
+          "Temple of the Damned",
+          "Slaughterhouse",
+          "Sacrificial Pit"
+        ],
+        "requires": "",
+        "gold": 320,
+        "lumber": 210,
+        "build_time": "140",
+        "food_produced": "10",
+        "units": [
+          {
+            "name": "Acolyte",
+            "requires": "",
+            "gold": "75",
+            "lumber": "0",
+            "build_time": "15",
+            "food": "1",
+            "morphs": ""
+          }
+        ],
+        "upgrades": [
+          {
+            "name": "Backpack",
+            "gold": "50",
+            "lumber": "25"
+          }
+        ],
+        "items": [],
+        "upgrades_to": {
+          "name": "Black Citadel",
+          "unlocks": ["Boneyard"],
+          "requires": ["Altar of Darkness"],
+          "gold": 325,
+          "lumber": 230,
+          "build_time": "140",
+          "food_produced": "10",
+          "units": [
+            {
+              "name": "Acolyte",
+              "requires": "",
+              "gold": "75",
+              "lumber": "0",
+              "build_time": "15",
+              "food": "1",
+              "morphs": ""
+            }
+          ],
+          "upgrades": [
+            {
+              "name": "Backpack",
+              "gold": "50",
+              "lumber": "25"
+            }
+          ],
+          "items": [],
+          "upgrades_to": null
+        }
+      }
+    },
+    "Haunted Gold Mine": {
+      "name": "Haunted Gold Mine",
+      "requires": "",
+      "gold": "225",
+      "lumber": "210",
+      "build_time": "110",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Ziggurat": {
+      "name": "Ziggurat",
+      "requires": "",
+      "gold": "150",
+      "lumber": "50",
+      "build_time": "50",
+      "food_produced": "10",
+      "upgrades": [],
+      "items": [],
+      "upgrades_to": [
+        {
+          "name": "Nerubian Tower",
+          "requires": "",
+          "gold": "250",
+          "lumber": "70",
+          "build_time": "30"
+        },
+        {
+          "name": "Spirit Tower",
+          "requires": ["Graveyard"],
+          "gold": "295",
+          "lumber": "90",
+          "build_time": "35"
+        }
+      ]
+    },
+    "Altar of Darkness": {
+      "name": "Altar of Darkness",
+      "unlocks": ["Black Citadel"],
+      "requires": "",
+      "gold": "180",
+      "lumber": "50",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "food": "5",
+          "name": "Death Knight",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Halls of the Dead", "Black Citadel"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Dreadlord",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Halls of the Dead", "Black Citadel"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Lich",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Halls of the Dead", "Black Citadel"],
+          "build_time": "55"
+        },
+        {
+          "food": "5",
+          "name": "Crypt Lord",
+          "gold": ["0", "400", "400"],
+          "lumber": ["0", "100", "100"],
+          "requirements": ["", "Halls of the Dead", "Black Citadel"],
+          "build_time": "55"
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Tomb of Relics": {
+      "name": "Tomb of Relics",
+      "unlocks": ["Obsidian Statue"],
+      "requires": "",
+      "gold": "130",
+      "lumber": "30",
+      "build_time": "60",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": [
+        {
+          "name": "Dust of Appearance",
+          "gold": "75",
+          "stock": "1",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "Orb of Corruption",
+          "gold": "375",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "0",
+          "requires": ["Black Citadel"]
+        },
+        {
+          "name": "Potion of Healing",
+          "gold": "150",
+          "stock": "3",
+          "stock_replenish": "120",
+          "requires": ["Halls of the Dead"]
+        },
+        {
+          "name": "Potion of Mana",
+          "gold": "150",
+          "stock": "2",
+          "stock_replenish": "120",
+          "requires": ["Halls of the Dead"]
+        },
+        {
+          "name": "Ritual Dagger",
+          "gold": "100",
+          "stock": "1",
+          "stock_replenish": "90",
+          "stock_start": "0"
+        },
+        {
+          "name": "Rod of Necromancy",
+          "gold": "150",
+          "stock": "1",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "Sacrificial Skull",
+          "gold": "50",
+          "stock": "2",
+          "stock_replenish": "45",
+          "stock_start": "0"
+        },
+        {
+          "name": "Scroll of Healing",
+          "gold": "250",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": ["Black Citadel"]
+        },
+        {
+          "name": "Scroll of Town Portal",
+          "gold": "325",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": ["Halls of the Dead"]
+        }
+      ]
+    },
+    "Graveyard": {
+      "name": "Graveyard",
+      "unlocks": ["Slaughterhouse", "Temple of the Damned", "Spirit Tower"],
+      "requires": "",
+      "gold": "215",
+      "lumber": "0",
+      "build_time": "80",
+      "food_produced": "0",
+      "upgrades": [
+        [
+          {
+            "name": "Unholy Strength",
+            "gold": 125,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Unholy Strength",
+            "gold": 200,
+            "lumber": 150,
+            "required": "Halls of the Dead",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Unholy Strength",
+            "gold": 275,
+            "lumber": 250,
+            "required": "Black Citadel",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Unholy Armor",
+            "gold": 125,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Unholy Armor",
+            "gold": 200,
+            "lumber": 150,
+            "required": "Halls of the Dead",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Unholy Armor",
+            "gold": 275,
+            "lumber": 250,
+            "required": "Black Citadel",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Creature Attack",
+            "gold": 150,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Creature Attack",
+            "gold": 200,
+            "lumber": 125,
+            "required": "Halls of the Dead",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Creature Attack",
+            "gold": 250,
+            "lumber": 200,
+            "required": "Black Citadel",
+            "research_time": 90
+          }
+        ],
+        [
+          {
+            "name": "Creature Carapace",
+            "gold": 150,
+            "lumber": 75,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Improved Creature Carapace",
+            "gold": 200,
+            "lumber": 200,
+            "required": "Halls of the Dead",
+            "research_time": 75
+          },
+          {
+            "name": "Advanced Creature Carapace",
+            "gold": 250,
+            "lumber": 325,
+            "required": "Black Citadel",
+            "research_time": 90
+          }
+        ]
+      ],
+      "items": []
+    },
+    "Sacrificial Pit": {
+      "name": "Sacrificial Pit",
+      "unlocks": "",
+      "requires": ["Halls of the Dead"],
+      "gold": "75",
+      "lumber": "150",
+      "build_time": "45",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Crypt": {
+      "name": "Crypt",
+      "unlocks": "",
+      "requires": "",
+      "gold": "200",
+      "lumber": "50",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Ghoul",
+          "requires": "",
+          "gold": "120",
+          "lumber": "0",
+          "build_time": "18",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Crypt Fiend",
+          "requires": ["Graveyard"],
+          "gold": "215",
+          "lumber": "40",
+          "build_time": "30",
+          "food": "3",
+          "morphs": ""
+        },
+        {
+          "name": "Gargoyle",
+          "requires": ["Graveyard", "Halls of the Dead"],
+          "gold": "175",
+          "lumber": "30",
+          "build_time": "35",
+          "food": "2",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Cannibalize",
+          "gold": "50",
+          "lumber": "0",
+          "research_time": "15"
+        },
+        {
+          "name": "Web",
+          "gold": "150",
+          "lumber": "150",
+          "research_time": "30"
+        },
+        {
+          "name": "Ghoul Frenzy",
+          "gold": "100",
+          "lumber": "150",
+          "research_time": "45"
+        },
+        {
+          "name": "Stone Form",
+          "gold": "75",
+          "lumber": "150",
+          "research_time": "40"
+        },
+        {
+          "name": "Burrow",
+          "gold": "75",
+          "lumber": "75",
+          "research_time": "45"
+        }
+      ],
+      "items": []
+    },
+    "Temple of the Damned": {
+      "name": "Temple of the Damned",
+      "unlocks": "",
+      "requires": ["Halls of the Dead", "Graveyard"],
+      "gold": "155",
+      "lumber": "140",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Necromancer",
+          "requires": "",
+          "gold": "145",
+          "lumber": "20",
+          "build_time": "24",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Banshee",
+          "requires": "",
+          "gold": "155",
+          "lumber": "30",
+          "build_time": "28",
+          "food": "2",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        [
+          {
+            "name": "Necromancer Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 30
+          },
+          {
+            "name": "Necromancer Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Black Citadel",
+            "research_time": 45
+          }
+        ],
+        [
+          {
+            "name": "Banshee Adept Training",
+            "gold": 100,
+            "lumber": 50,
+            "required": "",
+            "research_time": 60
+          },
+          {
+            "name": "Banshee Master Training",
+            "gold": 100,
+            "lumber": 150,
+            "required": "Black Citadel",
+            "research_time": 75
+          }
+        ],
+        []
+      ],
+      "items": []
+    },
+    "Slaughterhouse": {
+      "name": "Slaughterhouse",
+      "unlocks": "",
+      "requires": ["Halls of the Dead", "Graveyard"],
+      "gold": "140",
+      "lumber": "135",
+      "build_time": "60",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Abomination",
+          "requires": ["Black Citadel"],
+          "gold": "240",
+          "lumber": "70",
+          "build_time": "40",
+          "food": "4",
+          "morphs": ""
+        },
+        {
+          "name": "Meat Wagon",
+          "requires": ["Halls of the Dead"],
+          "gold": "230",
+          "lumber": "50",
+          "build_time": "36",
+          "food": "4",
+          "morphs": ""
+        },
+        {
+          "name": "Obsidian Statue",
+          "requires": ["Tomb of Relics"],
+          "gold": "200",
+          "lumber": "35",
+          "build_time": "35",
+          "food": "3",
+          "morphs": ["Destroyer"]
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Exhume Corpses",
+          "gold": "75",
+          "lumber": "50",
+          "research_time": "20"
+        },
+        {
+          "name": "Disease Cloud",
+          "gold": "100",
+          "lumber": "200",
+          "research_time": "45"
+        },
+        {
+          "name": "Morph into Destroyer",
+          "gold": "75",
+          "lumber": "150",
+          "research_time": "60"
+        }
+      ],
+      "items": []
+    },
+    "Boneyard": {
+      "name": "Boneyard",
+      "unlocks": "",
+      "requires": ["Black Citadel"],
+      "gold": "175",
+      "lumber": "200",
+      "build_time": "70",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Frost Wyrm",
+          "requires": "",
+          "gold": "385",
+          "lumber": "120",
+          "build_time": "65",
+          "food": "7",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [
+        {
+          "name": "Freezing Breath",
+          "gold": "150",
+          "lumber": "275",
+          "research_time": "60"
+        }
+      ],
+      "items": []
+    }
+  },
+  "neutral": {
+    "Fountain of Health": {
+      "name": "Fountain of Health",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Fountain of Mana": {
+      "name": "Fountain of Mana",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Goblin Laboratory": {
+      "name": "Goblin Laboratory",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "units": [
+        {
+          "name": "Goblin Sapper",
+          "requires": "",
+          "gold": "215",
+          "lumber": "100",
+          "build_time": "25",
+          "food": "2",
+          "morphs": ""
+        },
+        {
+          "name": "Goblin Shredder",
+          "requires": "",
+          "gold": "375",
+          "lumber": "100",
+          "build_time": "50",
+          "food": "4",
+          "morphs": ""
+        },
+        {
+          "name": "Goblin Zeppelin",
+          "requires": "",
+          "gold": "240",
+          "lumber": "60",
+          "build_time": "30",
+          "food": "0",
+          "morphs": ""
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    },
+    "Goblin Merchant": {
+      "name": "Goblin Merchant",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": [
+        {
+          "name": "Boots of Speed",
+          "gold": "250",
+          "stock": "2",
+          "stock_replenish": "60",
+          "stock_start": "220"
+        },
+        {
+          "name": "Dust of Appearance",
+          "gold": "75",
+          "stock": "1",
+          "stock_replenish": "60",
+          "stock_start": "0"
+        },
+        {
+          "name": "Potion of Invisibility",
+          "gold": "100",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "440"
+        },
+        {
+          "name": "Potion of Lesser Invulnerability",
+          "gold": "150",
+          "stock": "1",
+          "stock_replenish": "120",
+          "stock_start": "440"
+        },
+        {
+          "name": "Scroll of Healing",
+          "gold": "250",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": ["Black Citadel"]
+        },
+        {
+          "name": "Scroll of Protection",
+          "gold": "150",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440"
+        },
+        {
+          "name": "Scroll of Town Portal",
+          "gold": "325",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440",
+          "requires": []
+        },
+        {
+          "name": "Staff of Teleportation",
+          "gold": "150",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "220"
+        },
+        {
+          "name": "Tome of Retraining",
+          "gold": "200",
+          "stock": "2",
+          "stock_replenish": "120",
+          "stock_start": "440"
+        }
+      ]
+    },
+    "Marketplace": {
+      "name": "Marketplace",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Mercenary Camp": {
+      "name": "Mercenary Camp",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "upgrades": [],
+      "items": []
+    },
+    "Tavern": {
+      "name": "Tavern",
+      "requires": "",
+      "gold": "50",
+      "lumber": "0",
+      "build_time": "3",
+      "food_produced": "0",
+      "units": [
+        {
+          "food": "5",
+          "name": "Naga Sea Witch",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Dark Ranger",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Pandaren Brewmaster",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Firelord",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Pit Lord",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Beastmaster",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Tinker",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        },
+        {
+          "food": "5",
+          "name": "Alchemist",
+          "gold": ["0", "425", "425"],
+          "lumber": ["0", "135", "135"],
+          "requirements": [],
+          "build_time": "0"
+        }
+      ],
+      "upgrades": [],
+      "items": []
+    }
+  }
+}
