@@ -15,8 +15,6 @@ export default function ({ playerState, time }) {
     intervals.push(convertTime(i * intervalLength));
   }
 
-  console.log(intervals);
-
   return (
     <div id="timeintervals" style={{ display: "flex" }}>
       {intervals.map((interval) => (

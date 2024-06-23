@@ -1,3 +1,28 @@
+tmp plan
+
+newTimeLIneJSON
+
+display what the backend gives us on the front end
+each item in array represents a player
+
+then we loop trhough the active timelines and represent them per id on the front end
+
+-current resources go to where they should etc
+-timelineID will be top is 1 and farther down is 10 etc
+-icons for different actions
+-width of duration
+-travel time should be grey
+-build time is another color?
+-icon of building or whatever is being done overlapping first section - maybe slightly smaller to still show the colors
+
+-gather how many gold, lumber, currently building, heroes, units with counts to display on top
+
+NEW_FEATURES
+-zoom in and out, scroll wheel?
+
+newActionListJSON
+based on what the user chooses, give the backend what it needs
+
 ## Errors
 
 tiered items at shops
