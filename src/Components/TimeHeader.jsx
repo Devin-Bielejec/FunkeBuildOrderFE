@@ -16,11 +16,18 @@ export default function ({ playerState, time }) {
   }
 
   return (
-    <div id="timeintervals" style={{ display: "flex" }}>
+    <div
+      id="timeintervals"
+      style={{
+        display: "flex",
+        width: `${maxTime * pixelsPerSecond + 4 * intervals.length}px`,
+      }}
+      //4 * intervals.length for padding and border on children
+    >
       {intervals.map((interval) => (
         <div
           style={{
-            width: pixelsPerSecond * intervalLength,
+            width: `${pixelsPerSecond * intervalLength}px`,
             border: "1px solid black",
             padding: "1px",
           }}
