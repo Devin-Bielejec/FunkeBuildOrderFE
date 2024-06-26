@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { pixelsPerSecond } from "../utils/defaultState";
 import "./ProductionRow.css";
-import tmpPic from "../images/Wisp.png";
+import loadImage from "../utils/imageLoader";
 
 export default function ProductionRow({ timeline }) {
   /*
@@ -17,7 +17,6 @@ export default function ProductionRow({ timeline }) {
     totalWidth += travelTime ? travelTime * pixelsPerSecond : 0;
     totalWidth += duration ? duration * pixelsPerSecond : 0;
   });
-
   return (
     <div
       style={{
@@ -46,8 +45,7 @@ export default function ProductionRow({ timeline }) {
               }}
             >
               <img
-                src={tmpPic}
-                id="icon"
+                src={loadImage(`${name}.png`)}
                 style={{
                   position: "absolute",
                   bottom: 0,
