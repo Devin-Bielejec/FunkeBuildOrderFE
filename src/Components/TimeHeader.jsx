@@ -7,7 +7,7 @@ export default function ({ playerState, time }) {
     let convertedTime = new Date(time * 1000).toISOString().substring(14, 19);
     return convertedTime;
   };
-  let maxTime = 10 * 10; //seconds
+  let maxTime = 20 * 60; //seconds
   //Show time in second every ten seconds with tick marks in between??
   let intervalLength = 10; //10 seconds
   let intervals = [];

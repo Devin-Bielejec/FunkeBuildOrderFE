@@ -23,7 +23,7 @@ let playersState = [
         timelineID: 1,
         actions: [
           {
-            actionType: "WorkerMovementAction",
+            actionType: "0",
             trigger: {
               triggerType: "ASAP",
             },
@@ -399,6 +399,6 @@ let playersState = [
   },
 ];
 
-let pixelsPerSecond = 50; //seconds
+let pixelsPerSecond = 10; //seconds
 
 export { pixelsPerSecond, playersState };

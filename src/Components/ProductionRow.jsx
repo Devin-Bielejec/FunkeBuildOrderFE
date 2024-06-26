@@ -13,7 +13,7 @@ export default function ProductionRow({ timeline }) {
   */
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "row" }}>
       {timeline.actions.map(
         ({
           actionType,
@@ -23,6 +23,8 @@ export default function ProductionRow({ timeline }) {
           duration,
           startTime,
           travelTime,
+          currentWorkerTask,
+          desiredWorkerTask,
         }) => {
           console.log(travelTime, duration);
           let totalWidth = travelTime ? travelTime * pixelsPerSecond : 0;
@@ -67,13 +69,29 @@ export default function ProductionRow({ timeline }) {
                       border: "1px solid black",
                       padding: "10px",
                       backgroundColor: `${
-                        name == "GOLD"
-                          ? "gold"
-                          : name == "CONSTRUCTION"
+                        actionType == "BuildUnitAction"
                           ? "blue"
-                          : name == "LUMBER"
-                          ? name == "green"
-                          : "grey"
+                          : actionType == "ShopAction"
+                          ? "green"
+                          : actionType == "BuildStructureAction"
+                          ? "red"
+                          : actionType == "BuildUpgradeAction"
+                          ? "purple"
+                          : actionType == "WorkerMovementAction"
+                          ? currentWorkerTask == "GOLD"
+                          : "gold"
+                          ? currentWorkerTask == "LUMBER"
+                            ? "brown"
+                            : currentWorkerTask == "CONSTRUCTING"
+                            ? "orange"
+                            : currentWorkerTask == "ROAMING"
+                            ? "light blue"
+                            : currentWorkerTask == "IN_PRODUCTION"
+                            ? "dark green"
+                            : currentWorkerTask == "IDLE"
+                            ? "grey"
+                            : ""
+                          : ""
                       }`,
                     }}
                   />
@@ -86,3 +104,20 @@ export default function ProductionRow({ timeline }) {
     </div>
   );
 }
+
+/* 
+
+Chat GPT Colors
+
+BuildUnitAction: Blue (#1E90FF)
+ShopAction: Green (#32CD32)
+WorkerMovementAction: Yellow (#FFD700)
+GOLD: Gold (#FFD700)
+LUMBER: Brown (#8B4513)
+CONSTRUCTING: Orange (#FFA500)
+ROAMING: Light Blue (#ADD8E6)
+IN_PRODUCTION: Dark Green (#006400)
+IDLE: Grey (#808080)
+BuildStructureAction: Red (#FF4500)
+BuildUpgradeAction: Purple (#800080)
+*/
