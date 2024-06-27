@@ -49,6 +49,7 @@ export default function ProductionRow({ timeline }) {
                 height: "50px",
                 width: `${widthOfActionContainer}px`,
                 position: "relative",
+                marginLeft: `${startTime * pixelsPerSecond}px`,
               }}
             >
               {name && (
