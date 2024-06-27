@@ -23,7 +23,7 @@ let playersState = [
         timelineID: 1,
         actions: [
           {
-            actionType: "0",
+            actionType: "WorkerMovementAction",
             trigger: {
               triggerType: "ASAP",
             },
@@ -399,6 +399,9 @@ let playersState = [
   },
 ];
 
-let pixelsPerSecond = 10; //seconds
+//Eventually update this value for zooming in and out
+let pixelsPerSecond = 2; //seconds
 
-export { pixelsPerSecond, playersState };
+const secondsToSimtime = 10;
+const simtimeToSeconds = 1 / secondsToSimtime;
+export { pixelsPerSecond, playersState, simtimeToSeconds, secondsToSimtime };

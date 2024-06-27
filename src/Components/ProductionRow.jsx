@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { pixelsPerSecond } from "../utils/defaultState";
+import { pixelsPerSecond, simtimeToSeconds } from "../utils/defaultState";
 import "./ProductionRow.css";
 import loadImage from "../utils/imageLoader";
 
@@ -20,9 +20,9 @@ export default function ProductionRow({ timeline }) {
   return (
     <div
       style={{
-        position: "relative",
         width: `${totalWidth}px`,
         height: "50px",
+        display: "flex",
       }}
     >
       {timeline.actions.map(
@@ -37,42 +37,52 @@ export default function ProductionRow({ timeline }) {
           currentWorkerTask,
           desiredWorkerTask,
         }) => {
+          let widthOfActionContainer = travelTime
+            ? travelTime * pixelsPerSecond
+            : 0;
+          widthOfActionContainer += duration ? duration * pixelsPerSecond : 0;
+
           return (
             <div
               id="actionContainer"
               style={{
-                height: "100%",
+                height: "50px",
+                width: `${widthOfActionContainer}px`,
+                position: "relative",
               }}
             >
-              <img
-                src={loadImage(`${name}.png`)}
-                style={{
-                  position: "absolute",
-                  bottom: 0,
-                  left: 0,
-                  maxWidth: "90%",
-                  maxHeight: "90%",
-                  padding: "",
-                }}
-              />
+              {name && (
+                <img
+                  src={loadImage(`${name}.png`)}
+                  style={{
+                    position: "absolute",
+                    bottom: 0,
+                    left: 0,
+                    maxWidth: "90%",
+                    maxHeight: "90%",
+                    padding: "",
+                  }}
+                />
+              )}
 
-              {travelTime && (
+              {travelTime > 0 && (
                 <div
                   id="travelTime"
                   key={`Travel-${actionID}-${travelTime}`}
                   style={{
-                    width: `${travelTime * pixelsPerSecond - 22}px`,
-                    backgroundColor: "grey",
+                    minWidth: `${travelTime * pixelsPerSecond}px`,
+                    backgroundColor: "gray",
                     border: "1px solid black",
                     padding: "10px",
                   }}
                 />
               )}
-              {duration && (
+
+              {duration > 0 && (
                 <div
                   id="duration"
                   style={{
-                    width: `${duration * pixelsPerSecond - 22}px`,
+                    minWidth: `${duration * pixelsPerSecond}px`,
                     border: "1px solid black",
                     padding: "10px",
                     backgroundColor: `${
@@ -86,17 +96,17 @@ export default function ProductionRow({ timeline }) {
                         ? "purple"
                         : actionType == "WorkerMovementAction"
                         ? currentWorkerTask == "GOLD"
-                        : "gold"
-                        ? currentWorkerTask == "LUMBER"
+                          ? "gold"
+                          : currentWorkerTask == "LUMBER"
                           ? "brown"
                           : currentWorkerTask == "CONSTRUCTING"
                           ? "orange"
                           : currentWorkerTask == "ROAMING"
-                          ? "light blue"
+                          ? "lightblue"
                           : currentWorkerTask == "IN_PRODUCTION"
-                          ? "dark green"
+                          ? "darkgreen"
                           : currentWorkerTask == "IDLE"
-                          ? "grey"
+                          ? "gray"
                           : ""
                         : ""
                     }`,
