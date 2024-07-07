@@ -14,14 +14,16 @@ export default function Timeline({ playerState, time }) {
           width: "50px",
           gridRow: "2 / span 1",
           gridColumn: "1 / span 1",
+          display: "flex",
+          flexDirection: "column",
         }}
       >
         {playerState.activeTimelines.map((item) => (
           <img
             src={loadImage(`Wisp.png`)}
             style={{
-              maxWidth: "100%",
-              maxHeight: "100%",
+              maxWidth: "50px",
+              maxHeight: "50px",
               padding: "",
             }}
           />
