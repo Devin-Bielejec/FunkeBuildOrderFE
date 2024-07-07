@@ -1,7 +1,9 @@
-#timeline{
+#timeline {
   grid-row: 2 / span 7;
   grid-column: 1 / 5;
-  display: flex;
+  display: grid;
+  grid-template-columns: 50px auto;
+  grid-template-rows: 50px auto;
   flex-direction: column;
   overflow-x: scroll;
   position: relative;

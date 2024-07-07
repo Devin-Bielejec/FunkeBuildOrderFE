@@ -28,7 +28,7 @@ export default function ({ playerState, time }) {
 
   return (
     <div
-      id="timeintervals"
+      id="timeHeader"
       style={{
         display: "flex",
         minWidth: `${maxTime * pixelsPerSecond}px`,
