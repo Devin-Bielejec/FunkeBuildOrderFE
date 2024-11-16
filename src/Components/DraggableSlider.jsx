@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import {pixelsPerSecond} from "../utils/defaultState";
+import { pixelsPerSecond } from "../utils/defaultState";
 
 const Slider = () => {
-  const [position, setPosition] = useState(0);
+  //50 so slider starts in correct position
+  const [position, setPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
 
   const handleDragStart = (event) => {

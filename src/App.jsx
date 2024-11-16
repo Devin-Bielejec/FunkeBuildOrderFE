@@ -9,6 +9,7 @@ import Selection from "./Components/Selection";
 import Building from "./Components/Building";
 import ProductionRows from "./Components/ProductionRows";
 import BuildOrders from "./Components/BuildOrders";
+import Provider from "@components/ui/provider";
 
 /* wc3 font?? */
 export default function App() {
@@ -22,13 +23,15 @@ export default function App() {
 
   return (
     <main>
-      <div id="gridContainer">
-        {/* <BuildOrders handleBuild={handleBuild} buildOrders={playersState} /> */}
-        <Player playerState={playerState} time={time} />
-        <Timeline playerState={playerState} time={time} />
-        <Selection />
-        <Building />
-      </div>
+      <Provider>
+        <div id="gridContainer">
+          {/* <BuildOrders handleBuild={handleBuild} buildOrders={playersState} /> */}
+          <Player playerState={playerState} time={time} />
+          <Timeline playerState={playerState} time={time} />
+          <Selection />
+          <Building />
+        </div>
+      </Provider>
     </main>
   );
 }
